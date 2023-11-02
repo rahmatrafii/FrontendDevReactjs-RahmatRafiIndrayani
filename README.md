@@ -31,13 +31,13 @@ on GitHub.
 Clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/rahmatrafii/FrontendDevReactjs-RahmatRafiIndrayani
 ```
 
 Navigate to the project directory.
 
 ```bash
-cd repository-name
+cd FrontendDevReactjs-RahmatRafiIndrayani
 ```
 
 Install dependencies using npm or yarn. Choose one of the following commands:
