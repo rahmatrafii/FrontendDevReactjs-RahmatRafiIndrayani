@@ -59,7 +59,7 @@ Run the project locally.
 Using npm:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Using yarn:
