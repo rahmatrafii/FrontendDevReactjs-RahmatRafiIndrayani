@@ -11,7 +11,7 @@
 This application was created using:
 
 - [reactjs](https://react.dev/) - A JavaScript library for building user interfaces.
-- [vite](https://vitejs.dev/) - Bundler cepat untuk proyek JavaScript modern.
+- [vite](https://vitejs.dev/) - Fast bundler for modern JavaScript projects.
 - [tailwindcss](https://tailwindcss.com/) - A JavaScript library for building user interfaces.
 - [axios] - HTTP library to perform HTTP requests.
 - [React Router] - Library for route management in React applications.
