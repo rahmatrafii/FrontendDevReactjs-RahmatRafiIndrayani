@@ -16,8 +16,6 @@ This application was created using:
 - [axios] - HTTP library to perform HTTP requests.
 - [React Router] - Library for route management in React applications.
 
-And of course Dillinger itself is open source with a [public repository][dill]
-on GitHub.
 
 ## Requirement
 
