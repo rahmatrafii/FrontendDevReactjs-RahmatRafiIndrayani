@@ -33,7 +33,7 @@ const Content = ({ data, setLimit, limit, priceRange, isOpen, isLoadMore }) => {
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-4 overflow-hidden gap-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-3 overflow-hidden sm:gap-5 lg:gap-7">
         {dataNow?.map(
           (item) =>
             item.name && item.photo && <Card item={item} key={item.name} />
@@ -59,7 +59,9 @@ const Content = ({ data, setLimit, limit, priceRange, isOpen, isLoadMore }) => {
 
       {dataNow?.length == 0 || !dataNow ? (
         <div className="w-full py-10 text-center">
-          <h1 className="text-2xl font-semibold">Restaurant not found.</h1>
+          <h1 className="text-lg md:text-2xl font-semibold">
+            Restaurant not found.
+          </h1>
         </div>
       ) : null}
     </div>

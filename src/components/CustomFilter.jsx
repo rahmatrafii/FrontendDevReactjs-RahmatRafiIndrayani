@@ -2,7 +2,6 @@ import { Listbox, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
 const CustomFilter = ({ options, selected, setSelected }) => {
-  console.log(options);
   return (
     <div className="w-max">
       <Listbox
@@ -12,7 +11,7 @@ const CustomFilter = ({ options, selected, setSelected }) => {
         }}
       >
         <div className="relative w-max z-10">
-          <Listbox.Button className="relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-sm bg-white py-2 px-3 text-left shadow-md sm:text-sm border">
+          <Listbox.Button className="relative w-full min-w-[127px] flex justify-between items-center cursor-pointer rounded-sm bg-white py-2 px-3 text-left shadow-md sm:text-sm border">
             <span className="block truncate">{selected.name}</span>
             <img
               src="/icon/chevron-up-down.svg"

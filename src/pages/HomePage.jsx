@@ -45,40 +45,40 @@ const HomePage = () => {
           <h1 className="text-3xl lg:text-5xl  font-extrabold text-sky-400 mb-4">
             Restaurants
           </h1>
-          <p className="text-sm text-slate-600 mb-5 max-w-md mx-auto">
-            Selamat datang di tempat terbaik untuk menjelajahi cita rasa!
-            Temukan pengalaman kuliner terbaik di setiap sudut kota dengan kami.
-            Selamat menemukan restoran impian Anda!
+          <p className=" text-sm md:text-lg text-slate-600 mb-5 max-w-md mx-auto">
+            Welcome to the best place to explore flavours! Discover the best
+            culinary experiences in every corner of the city with us.
+            Congratulations on finding your dream restaurant!
           </p>
         </div>
 
-        <div className="flex-wrap gap-2 flex items-center  gap-x-4 mb-10">
-          <div>
-            <h4 className="text-2xl font-semibold">Filter : </h4>
-          </div>
-          <div className="whitespace-nowrap bg-white py-2 px-3 text-left shadow-md sm:text-sm border">
-            <input
-              type="checkbox"
-              id="opennow"
-              name="opennow"
-              className="rounded-full mr-1 cursor-pointer"
-              checked={isOpen}
-              onChange={() => setIsOpen((prev) => !prev)}
+        <div className="flex-wrap flex-col sm:flex-row gap-2 flex items-start justify-start  gap-x-4 mb-10 text-start  text-sm md:text-base">
+          <h4 className="text-2xl font-semibold">Filter : </h4>
+          <div className="flex gap-5 flex-wrap">
+            <div className="whitespace-nowrap bg-white py-2 px-3 text-left shadow-md sm:text-sm border">
+              <input
+                type="checkbox"
+                id="opennow"
+                name="opennow"
+                className="rounded-full mr-1 cursor-pointer"
+                checked={isOpen}
+                onChange={() => setIsOpen((prev) => !prev)}
+              />
+              <label htmlFor="opennow" className="cursor-pointer">
+                Open Now
+              </label>
+            </div>
+            <CustomFilter
+              options={categoryList}
+              selected={category}
+              setSelected={setCategory}
             />
-            <label htmlFor="opennow" className="cursor-pointer">
-              Open Now
-            </label>
+            <CustomFilter
+              options={priceList}
+              selected={priceRange}
+              setSelected={setPriceRange}
+            />
           </div>
-          <CustomFilter
-            options={categoryList}
-            selected={category}
-            setSelected={setCategory}
-          />
-          <CustomFilter
-            options={priceList}
-            selected={priceRange}
-            setSelected={setPriceRange}
-          />
         </div>
 
         {loading ? (
